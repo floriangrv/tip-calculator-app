@@ -1,0 +1,220 @@
+:root {
+  /* 
+    Very dark cyan: hsl(183, 100%, 15%)
+    - Dark grayish cyan: hsl(186, 14%, 43%)
+    - Grayish cyan: hsl(184, 14%, 56%)
+    - Light grayish cyan: hsl(185, 41%, 84%)
+    - Very light grayish cyan: hsl(189, 41%, 97%)
+    - White: hsl(0, 0%, 100%) */
+}
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+*{box-sizing:border-box;}
+body {
+  font-family: "Space Mono", monospace;
+  background-color: hsl(185, 41%, 84%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tip__calculator {
+  max-width: 375px;
+
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 26px;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.tip__bill {
+  background-color: hsl(189, 41%, 97%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.tip__number--people {
+  background-color: hsl(189, 41%, 97%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 12px;
+}
+.tip__bill-result {
+  color: hsl(183, 100%, 15%);
+  font-size: 1.5rem;
+  text-align: right;
+  
+  font-weight: 700;
+}
+
+.tip__bill:hover{
+    border: 2px solid hsl(172, 67%, 45%);
+    border-radius: 8px;
+}
+
+.tip__number--result {
+  color: hsl(183, 100%, 15%);
+  font-size: 1.5rem;
+  text-align: right;
+
+  font-weight: 700;
+}
+
+.red-outline {
+    border: 2px solid #B86750;
+    border-radius: 8px;
+}
+
+.tip__title--container {
+  max-width: 120px;
+  letter-spacing: 1rem;
+  word-break: break-all;
+  align-self: center;
+  margin: 0px auto;
+ 
+  text-align: center;
+}
+
+.tip__title {
+  font-size: 1.5rem;
+  color: hsl(183, 22%, 33%);
+  text-align: center;
+}
+
+.tip__select {
+}
+.tip__total {
+  font-size: 0.9rem;
+  color: white;
+}
+h4 {
+  font-size: 0.8rem;
+  color: hsl(176, 20%, 69%);
+}
+.tip__price {
+  font-size: 1.5rem;
+  color: hsl(172, 67%, 45%);
+}
+
+.tip__select--options {
+  display: grid;
+  grid-template-columns: 47% 47%;
+  gap: 20px;
+  font-size: 1.25rem;
+}
+
+.tip__result {
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 22px;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tip__category {
+  font-size: 1rem;
+  color: hsl(186, 14%, 43%);
+}
+
+.btn__tips {
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 900;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn__tips:hover {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+.btn__tips-secondary {
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(186, 26%, 38%);
+  font-weight: 700;
+  font-size: 1.5rem;
+ text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn__tips-secondary:hover {
+  background-color: hsl(172, 67%, 45%);
+}
+
+.btn--primary {
+  background-color: hsl(172, 67%, 45%);
+  margin: 12px;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  color: hsl(183, 100%, 15%);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn--primary:hover {
+  background-color: hsl(173, 61%, 77%);
+}
+
+@media only screen and (min-width: 960px) {
+  .tip__calculator {
+    display: flex;
+    flex-direction: row;
+    min-width: 960px;
+    justify-content: space-between;
+  }
+  .tip__calculator--selector {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .tip__result {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .tip__select--options {
+    grid-template-columns: 30% 30% 30%;
+
+    font-size: 1.25rem;
+  }
+
+  .tip__number--result {
+      margin-left: 84px;
+
+  }
+
+  .tip__price {
+    font-size: 2.57rem;
+    font-weight: 700;
+  }
+
+  .btn__tips:hover {
+    background-color: hsl(173, 61%, 77%);
+  }
+
+  .btn__tips-secondary:hover {
+    background-color: hsl(173, 61%, 77%);
+  }
+}
